@@ -1,164 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
     <title>Book store</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <nav>
-            <!-- top-navbar banner -->
+      <nav>
+        <!-- top-navbar banner -->
 
-            <div class="header-banner">
+        <div class="header-banner">
           <div class="logo">
             <h1>NURIA</h1>
             <p>The Honest Store</p>
-         
-        </div>
-        <div class="search-input-container">
-        <input type="search" name="search" id="search-input" placeholder="search...">
-        <p class="categories-dropdown">
-        <select name="choice" id="categories-choices">
+          </div>
+          <div class="search-input-container">
+            <input
+              type="search"
+              name="search"
+              id="search-input"
+              placeholder="search..."
+            />
+            <p class="categories-dropdown">
+              <select name="choice" id="categories-choices">
                 <option value="All Categories">All Categories</option>
                 <option value="Uncategorised">Uncategorised</option>
                 <option value="Books">Books</option>
                 <option value="Home & Decor">Home & Decor</option>
                 <option value="Fashion & Clothing">Fashion & Clothing</option>
-                <option value="Curio & African Artifacts">Curio & African Artifacts</option>
+                <option value="Curio & African Artifacts">
+                  Curio & African Artifacts
+                </option>
                 <option value="Solar & Energy">Solar & Energy</option>
                 <option value="Lifestyle">Lifestyle</option>
-        </select>
-        </p>
-        <i class="fa fa-search search-icon" aria-hidden="true"></i>
+              </select>
+            </p>
+            <i class="fa fa-search search-icon" aria-hidden="true"></i>
+          </div>
+          <div class="personal-detail-icons">
+            <i class="fa fa-user-circle user-circle" aria-hidden="true"></i>
+            <span>
+              <p>hello!</p>
+              <h3>my account</h3>
+            </span>
+            <i class="fa fa-heart" aria-hidden="true"></i>
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+          </div>
         </div>
-       <div class="personal-detail-icons">
 
-        <i class="fa fa-user-circle user-circle" aria-hidden="true"></i>
-        <span>
-        <p>hello!</p>
-        <h3>my account</h3>
-    </span>
-        <i class="fa fa-heart" aria-hidden="true"></i>
-        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-    </div>
-    </div>
+        <!-- the side-wrap header -->
+        <div class="bottom-navbar">
+          <div class="menu-wrap-header">
+            <h2>
+              <i
+                class="fa fa-bars sidebar-hamburger-icon"
+                aria-hidden="true"
+              ></i>
+              Shop by Category
+            </h2>
+          </div>
+          <!-- bottom main navbar -->
+          <ul class="navbar-links menu">
+            <li><a href="index.html" class="active"> Home</a></li>
+            <li>
+              <a href="/" class="active"
+                >Books <i class="fa fa-caret-down" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li><a href="/" class="active">eVoucher</a></li>
+            <li><a href="/" class="active">Kenyan Books</a></li>
+            <li><a href="/" class="active">Vendors</a></li>
+            <li><a href="/" class="active">Contact Us</a></li>
+            <li>
+              <a href="/" class="active"
+                >(Ksh) <i class="fa fa-caret-down" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
 
-    <!-- the side-wrap header -->
-    <div class="bottom-navbar">
-    <div class="menu-wrap-header">
-        <h2> <i class="fa fa-bars sidebar-hamburger-icon" aria-hidden="true"></i>
-        Shop by Category</h2>
-    </div>
-   <!-- bottom main navbar -->
-<ul class="navbar-links menu">
-    <li><a href="index.html" class="active"> Home</a></li>
-    <li><a href="/" class="active">Books <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-    <li><a href="/" class="active">eVoucher</a></li>
-    <li><a href="/" class="active">Kenyan Books</a></li>
-    <li><a href="/" class="active">Vendors</a></li>
-    <li><a href="/" class="active">Contact Us</a></li>
-    <li><a href="/" class="active">(Ksh)
-    <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-</ul>
-</div>
+        <!-- display on hovering books -->
+        <div class="books-available-by-category">
+          <div class="books-topic-categories">
+            <span>
+              <h3>Top Picks</h3>
+              <p>autobiography</p>
+              <p>fiction & non-fiction</p>
+              <p>self help & motivation</p>
+            </span>
+            <span>
+              <h3>Most popular</h3>
+              <p>african interest</p>
+              <p>business</p>
+              <p>romances and thrillers</p>
+            </span>
+            <span>
+              <h3>best sellers</h3>
+              <p>international bestsellers</p>
+              <p>kids & teens</p>
+              <p>religion & spiritual</p>
+            </span>
+            <span>
+              <img src="/images/book-cover.png" width="250px" height="150px" />
+            </span>
+            <span>
+              <img src="/images/books-pile.png" width="180px" height="120px" />
+            </span>
+          </div>
+        </div>
+      </nav>
+      <!-- the side-wrap navbar that contains the links  and books-slider display -->
+      <section>
+        <div class="middle-section">
+          <div class="side-menu-wrap">
+            <ul class="sidebar-menu-wrap">
+              <li>
+                <a href="/"
+                  ><i class="fa fa-home home-icon" aria-hidden="true"></i>
+                  home</a
+                >
+              </li>
+              <li><a href="/">autobiography</a></li>
+              <li><a href="/">business</a></li>
+              <li><a href="/">fiction</a></li>
+              <li><a href="/">international bestsellers</a></li>
+              <li><a href="/">kenyan books</a></li>
+              <li><a href="/">self help</a></li>
+              <li><a href="/" style="color: #04aa6d">view all > </a></li>
+            </ul>
+          </div>
 
-<!-- display on hovering books -->
-<div class="books-available-by-category">
-<div class="books-topic-categories">
-    <span>
-    <h3>Top Picks</h3>
-    <p>autobiography</p>
-    <p>fiction & non-fiction</p>
-    <p>self help & motivation</p>
-</span>
-<span>
-    <h3>Most popular</h3>
-    <p>african interest</p>
-    <p>business</p>
-    <p>romances and thrillers</p>
-</span>
-<span>
-    <h3>best sellers</h3>
-    <p>international bestsellers</p>
-    <p>kids & teens</p>
-    <p>religion & spiritual</p>
-</span>
-    <span>
-         <img src="/images/book-cover.png" width="250px"height="150px">
-        </span>
-        <span>
-         <img src="/images/books-pile.png" width="180px"height="120px">
-        </span>
-</div>
-</div>
-</nav>
- <!-- the side-wrap navbar that contains the links  and books-slider display -->
- <section>
-    <div class="middle-section">
-        <div class="side-menu-wrap">
- <ul class="sidebar-menu-wrap">
-    <li><a href="/"><i class="fa fa-home home-icon" aria-hidden="true"></i> home</a></li>
-    <li><a href="/">autobiography</a></li>
-    <li><a href="/">business</a></li>
-    <li><a href="/">fiction</a></li>
-    <li><a href="/">international bestsellers</a></li>
-    <li><a href="/">kenyan books</a></li>
-    <li><a href="/">self help</a></li>
-    <li><a href="/" style="color: #04AA6D;">view all > </a> </li>
-</ul>
-</div>
-
-<div class="middlebookslider">
-<img src="/images/book-images.jpg" width="550">
-<!-- <img src="/images/book2-images.jpg" width="600px">
+          <div class="middlebookslider">
+            <img src="/images/book-images.jpg" width="550" />
+            <!-- <img src="/images/book2-images.jpg" width="600px">
 <img src="/images/book3-images.jpg" width="600px"> -->
-</div>
+          </div>
 
-<div class="columnbookslider">
-    <img src="/images/kiriamiti4download.jpg" width="280px" height="350px">
-<!-- <img src="/images/kiriamiti2-download.jpg" width="280px">
+          <div class="columnbookslider">
+            <img
+              src="/images/kiriamiti4download.jpg"
+              width="280px"
+              height="350px"
+            />
+            <!-- <img src="/images/kiriamiti2-download.jpg" width="280px">
 <img src="/images/kiriamiti3-images.jpg" width="280px"> -->
-</div>
-</div>
+          </div>
+        </div>
 
-<!--  shipping and delivery section-->
-<div class="delivery-wrap-container">
-    <div class="shipping">
-        <img src="/images/truck.png" width="60px">
-        <div class="shipping-info">
-        <h3>FREE SHIPPING</h3>
-        <p>No charge on deliveries within the Nairobi CBD.</p>
+        <!--  shipping and delivery section-->
+        <div class="delivery-wrap-container">
+          <div class="shipping">
+            <img src="/images/truck.png" width="60px" />
+            <div class="shipping-info">
+              <h3>FREE SHIPPING</h3>
+              <p>No charge on deliveries within the Nairobi CBD.</p>
+            </div>
+          </div>
+          <div class="shipping">
+            <img src="/images/icons8-clock-32.png" width="70px" />
+            <div class="shipping-info">
+              <h3>SAME DAY DELIVERY</h3>
+              <p>Same-day delivery for Nairobi orders placed before 3pm.</p>
+            </div>
+          </div>
+          <div class="shipping">
+            <img src="/images/24/7 open.png" width="40px" />
+            <div class="shipping-info">
+              <h3>SUPPORT 24/7</h3>
+              <p>
+                Have an issue? Get round-the-clock assistance 7 days a week.
+              </p>
+            </div>
+          </div>
+          <div class="shipping">
+            <img src="/images/house.png" width="40px" />
+            <div class="shipping-info">
+              <h3>DOORSTEP DELIVERY</h3>
+              <p>Shop from the comfort of your home & we'll deliver to you.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="books-section">
+          <div class="top-picks">
+            <img
+              src="/images/kiriamiti4download.jpg"
+              width="200px"
+              height="280px"
+            />
+            <img src="/images/kiriamiti3-images.jpg" width="200px" />
+            <img
+              src="/images/kiriamiti4download.jpg"
+              width="200px"
+              height="280px"
+            />
+            <img src="/images/kiriamiti2-download.jpg" width="200px" />
+            <img src="/images/kiriamiti3-images.jpg" width="200px" />
+          </div>
+        </div>
+      </section>
+
+      <!-- footer section -->
+      <footer>
+        <!-- signup section -->
+        <div class="signup-container">
+          <div class="newsletter-section">
+            <h2>Sign Up to our Newsletter</h2>
+            <p>
+              Subscribe and be the first to know about our giveaways, offers,
+              promotions and more.
+            </p>
+            <div class="email-input-container">
+              <input
+                type="email"
+                name="email"
+                id="email-input"
+                placeholder="Enter your Email address..."
+              />
+              <button type="button" id="email-button">SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+        <!-- end  -->
+        <!-- bottom-footer -->
+        <div class="footer-main">
+        <div class="nuria-details">
+
+            <div class="footer-logo">
+                <h1><img src="/images/triangle.png" class="small-triangle">
+                    <img src="/images/largetriangle.png" class="large-triangle">
+                    NURIA</h1>
+                <p>the honest store</p>
+              </div>
+            <div class="about-nuria">
+        
+            <div class="nuria-address">
+          <div class="address">
+            <h3>ADDRESS:</h3>
+            <p>
+              The Bazaar Mall, 11th Floor Suite 1105, Along Moi Avenue, Nairobi
+              CBD
+            </p>
+          </div>
+          <div class="email">
+            <h3>Email:</h3>
+            <p>nuriakenyabookstore@gmail.com</p>
+          </div>
+        </div>
+ 
+           <div class="nuria-outreach">
+          <div class="phone-contact">
+            <h3>PHONE:</h3>
+            <p>+254 794 233261</p>
+            <p>+254 729 829697</p>
+          </div>
+          <div class="working-hours">
+            <h3>OPENING HOURS:</h3>
+            <p>Mon - Sat: 8am - 7 pm</p>
+          </div>
+        </div>
+
     </div>
-</div>
-<div class="shipping">
-      <img src="/images/icons8-clock-32.png" width="40px">
-      <div class="shipping-info">
-        <h3>SAME DAY DELIVERY</h3>
-        <p>Same-day delivery for Nairobi orders placed before 3pm.</p>
+
+        <div class="shops">
+          <h3>shop</h3>
+          <p>Books</p>
+          <p>Electronics</p>
+          <p>Fashion</p>
+          <p>Lifestyle</p>
+        </div>
+
+        <div class="marketing">
+          <h3>nuria</h3>
+          <p>Nuria Global</p>
+          <p>Blog</p>
+          <p>About Us</p>
+          <p>Affiliate Marketing</p>
+          <p>Contact Us</p>
+        </div>
+
+        <div class="links">
+          <div class="quick-links">
+            <h3>quick-links</h3>
+            <p>Delivery Zones</p>
+            <p>Return Policy</p>
+          </div>
+
+          <div class="social-media">
+            <ul class="social-icons">
+              <li><i class="fab fa-facebook" aria-hidden="true"></i></li>
+              <li><i class="fab fa-twitter" aria-hidden="true"></i></li>
+              <li><i class="fab fa-instagram" aria-hidden="true"></i></li>
+            </ul>
+          </div> 
+          <div class="national-flags">
+            <img src="/images/kenya.png" />
+            <img src="/images/united-states-of-america.png" />
+            <img src="/images/united-kingdom.png" />
+          </div>
+        </div>
     </div>
-</div>
-    <div class="shipping">
-        <img src="/images/24/7 open.png" width="40px">
-        <div class="shipping-info">
-        <h3>SUPPORT 24/7</h3>
-        <p>Have an issue? Get round-the-clock assistance 7 days a week.</p>
-    </div>
-</div>
-    <div class="shipping">
-        <img src="/images/house.png" width="40px">
-        <div class="shipping-info">
-        <h3> DOORSTEP DELIVERY</h3>
-        <p>Shop from the comfort of your home & we'll deliver to you.</p>
-    </div>
-</div>
-</div>
-</section>
+      </footer>
     </main>
-</body>
-</html>     
+  </body>
+</html>

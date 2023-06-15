@@ -2,14 +2,21 @@
   margin: 0;
   padding: 0;
 }
+:root{
+  font-family: 'Roboto', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
 main {
   font-family: "Open Sans", sans-serif;
 }
 section{
-    max-width: 1000px;
+    min-width: 1000px;
     margin: auto;
 }
-
+h1{
+  font-family: 'Roboto', sans-serif;
+}
 /* banner style details */
 .header-banner {
   display: flex;
@@ -18,13 +25,14 @@ section{
   width: 100%;
   height: 80px;
   margin-top: 5px;
+  padding: 0 20px;
   border: 2px solid green;
   background-color: rgb(19, 155, 72);
   color: rgb(255, 255, 255);
 }
 .search-input-container {
   display: flex;
-  height: 40px;
+  height: 50px;
 }
 #search-input {
   width: 200px;
@@ -56,6 +64,8 @@ section{
 .search-icon {
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
+  padding: 20px;
+  text-align: center;
 }
 .personal-detail-icons {
   display: flex;
@@ -83,8 +93,6 @@ span h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 1300px; */
-  /* margin: auto; */
   height: 50px;
   border-bottom: 1px solid rgb(223, 220, 220);
 }
@@ -144,15 +152,11 @@ span h3 {
   font-size: 15px;
   font-weight: 500;
   color: black;
-  /* margin-right: 50px; */
- 
+
 }
 .navbar-links a:hover {
-  color: #04aa6d;
+  color: rgb(15,159,15);
 }
-/* .navbar-links li{
-    margin-right: 40px
-  } */
 /* .navbar-links  a.active {
    color: #04AA6D;
   } */
@@ -195,7 +199,7 @@ span h3 {
   align-items: center; 
   /* float: right; */
   gap: 10px;
-  width: 800px;
+  width: 1000px;
   margin:10px auto; 
 }
 .middlebookslider{
@@ -204,21 +208,170 @@ margin-top: 20px;
 .columnbookslider{
     margin-top: 15px;
 } 
+/* shipping and delivery section */
 .delivery-wrap-container{
 border: 1px solid rgb(156, 155, 155);
 display: flex;
 justify-content: center;
 align-items: center;
+column-gap: 30px;
+padding: 10px;
+width: 1100px;
+margin:auto; 
 }
 .shipping{
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 15px;
+    border-right: 1px solid rgb(144, 146, 142);
 }
-/* .shipping-info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 15px;
-} */
+.shipping-info h3{
+  font-size: 15px;
+ margin-bottom: 10px;
+}
+.shipping-info p{
+    font-size: 12px;
+    line-height: 18px;
+    color: rgb(206,212,215);
+}
+.shipping:nth-child(4){
+  border-right: none;
+}
+/* the books section */
+.books-section{
+  width: 1100px;
+  margin:auto; 
+}
+.top-picks{
+  display:flex;
+  gap: 20px;
+margin: 30px 0;
+}
+/* footer */
+/* sign up container */
+.signup-container{
+  height: 100px; 
+  margin: auto;
+  padding:10px 50px;
+  background-color: rgb(244,244,244);
+  display: flex;
+  align-items: center;
+}
+  .newsletter-section {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.newsletter-section h2{
+  color: rgb(103, 197, 139);
+  font-size: 18px;
+}
+.newsletter-section p {
+  width: 450px; /* Set the desired width for the paragraph container */
+color: rgb(116,116,116);
+}
+.email-input-container{
+  display: flex;
+}
+#email-input {
+ padding: 15px 50px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-right: none;
+  background-color: #fff;
+  color: rgb(180, 177, 177);
+  border: none;
+}
+#email-input::placeholder {
+  text-align: center;
+  font-size: 15px;
+  color: rgb(112, 108, 108);
+}
+#email-button{
+  padding: 15px 30px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: black;
+  color: #fff;
+  border: none;
+}
+
+/* main footer stylying */
+.footer-main{
+  margin:auto;
+  padding:10px 50px;
+  background-color:#fff;
+}
+.nuria-details{
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.nuria-details h3{
+  margin-bottom: 10px;
+}
+.nuria-details p{
+color: rgb(116,116,116);
+font-size: 13px;
+}
+.footer-logo {
+  margin-top: 70px;
+  margin-bottom: -4rem;
+  text-align: center;
+}
+.footer-logo h1{
+  letter-spacing: 20px;
+}
+.footer-logo p{
+  letter-spacing: 8px;
+  text-transform: capitalize;
+}
+.about-nuria {
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+margin-top: 100px;
+}
+.nuria-address,
+.nuria-outreach{
+  /* border: 1px solid rgb(67, 40, 219); */
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  row-gap: 30px;
+}
+.shops {
+  grid-column: 2;
+  /* margin-bottom: 320px; */
+  line-height: 30px;
+}
+
+.marketing {
+  grid-column: 3;
+  line-height: 30px;
+}
+
+.links {
+  grid-column: 4;
+  line-height: 30px;
+}
+.social-icons{
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+.social-icons li:nth-child(2){
+  border-bottom: 1px solid rgb(216, 213, 213);
+}
+.national-flags{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid rgb(216, 213, 213);
+}
+.small-triangle{
+ color: black;
+}
